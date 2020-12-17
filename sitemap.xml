@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://fibreactive.github.io/</loc>
+    <lastmod>2020-12-08T17:31:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/posts/first-post/</loc>
+    <lastmod>2020-12-08T17:31:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/posts/</loc>
+    <lastmod>2020-12-08T17:31:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/about/</loc>
+    <lastmod>2020-11-24T21:24:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/contact/</loc>
+    <lastmod>2018-01-28T21:28:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/series/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/tags/</loc>
+  </url>
+  
+</urlset>

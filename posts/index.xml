@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on damiloladolor</title>
+    <link>https://fibreactive.github.io/posts/</link>
+    <description>Recent content in Posts on damiloladolor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Dec 2020 17:31:54 +0100</lastBuildDate>
+    
+	<atom:link href="https://fibreactive.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First post</title>
+      <link>https://fibreactive.github.io/posts/first-post/</link>
+      <pubDate>Tue, 08 Dec 2020 17:31:54 +0100</pubDate>
+      
+      <guid>https://fibreactive.github.io/posts/first-post/</guid>
+      <description>Hello people, this is my first post on my blog, and I hope to write more of posts at least once a week. This is work in progress, I plan to start writing soon on cool things I learn. 🚀</description>
+    </item>
+    
+  </channel>
+</rss>
