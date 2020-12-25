@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on damiloladolor</title>
-    <link>https://fibreactive.github.io/posts/</link>
-    <description>Recent content in Posts on damiloladolor</description>
+    <title>web scraping on damiloladolor</title>
+    <link>https://fibreactive.github.io/tags/web-scraping/</link>
+    <description>Recent content in web scraping on damiloladolor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Dec 2020 20:38:40 +0100</lastBuildDate>
     
-	<atom:link href="https://fibreactive.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fibreactive.github.io/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://fibreactive.github.io/posts/web-scraping-with-go/</guid>
       <description>I have been flirting with go for a few weeks now and I built a simple forum-like website using gin which is a popular web framework for golang. After building the application, I was satisfied with how much I was able to learn about the language so I decided to do another little project with it. While I was browsing the web mindlessly(like most of us do), I stumbled upon a comment that talked about web scrapping in python then an idea popped in my mind, why not scrape the frontpage of a popular online forum then use the data to populate my own database.</description>
-    </item>
-    
-    <item>
-      <title>First post</title>
-      <link>https://fibreactive.github.io/posts/first-post/</link>
-      <pubDate>Tue, 08 Dec 2020 17:31:54 +0100</pubDate>
-      
-      <guid>https://fibreactive.github.io/posts/first-post/</guid>
-      <description>Hello people, this is my first post on my blog, and I hope to write more of posts at least once a week. This is work in progress, I plan to start writing soon on cool things I learn. 🚀</description>
     </item>
     
   </channel>

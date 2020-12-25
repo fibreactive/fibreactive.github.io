@@ -3,17 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://fibreactive.github.io/</loc>
-    <lastmod>2020-12-08T17:31:54+01:00</lastmod>
+    <loc>https://fibreactive.github.io/categories/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://fibreactive.github.io/posts/first-post/</loc>
-    <lastmod>2020-12-08T17:31:54+01:00</lastmod>
+    <loc>https://fibreactive.github.io/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/tags/go/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/categories/go/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/tags/gocolly/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/categories/golang/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://fibreactive.github.io/posts/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/tags/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/tags/web-scraping/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/posts/web-scraping-with-go/</loc>
+    <lastmod>2020-12-25T20:38:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fibreactive.github.io/posts/first-post/</loc>
     <lastmod>2020-12-08T17:31:54+01:00</lastmod>
   </url>
   
@@ -28,19 +68,11 @@
   </url>
   
   <url>
-    <loc>https://fibreactive.github.io/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://fibreactive.github.io/projects/</loc>
   </url>
   
   <url>
     <loc>https://fibreactive.github.io/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fibreactive.github.io/tags/</loc>
   </url>
   
 </urlset>
