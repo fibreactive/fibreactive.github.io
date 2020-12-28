@@ -165,19 +165,19 @@
         
           <img src='https://fibreactive.github.io/images/posts/golang.png' alt="Featured image"/>
         
-        <p>I have been flirting with go for a few weeks now and I built a simple forum-like website using <a href="https://github.com/gin-gonic/gin">gin</a> which is a popular web framework for golang. After building the application, I was satisfied with how much I was able to learn about the language so I decided to do another little project with it. While I was browsing the web mindlessly(like most of us do), I stumbled upon a comment that talked about web scrapping in python then an idea popped in my mind, why not scrape the frontpage of a popular online forum then use the data to populate my own database. Now, scraping a website is not illegal, but it&rsquo;s good you should know what you can and cannot scrape from a website. Many websites have a <strong>robots.txt</strong> file which gives such information (checkout <a href="https://google.com/robots.txt)">https://google.com/robots.txt)</a>. While there are tons of web scrapping tutorials on the web mostly in python, I felt there weren&rsquo;t enough of them in go so I decided to write one.  I did my research and found out an elegant golang framework for scraping websites called <a href="https://go-colly.org">colly</a>, and with this tool I was able to scrape the frontpage of a popular Nigerian forum called <a href="https://nairaland.com/">Nairaland</a>.</p>
+        <p>I have been flirting with go for a few weeks now and I built a simple forum-like website using <a href="https://github.com/gin-gonic/gin">gin</a> which is a popular web framework for golang. After building the application, I was satisfied with how much I was able to learn about the language so I decided to do another little project with it. While I was browsing the web mindlessly(like most of us do), I stumbled upon a comment that talked about web scrapping in python then an idea popped in my mind, why not scrape the frontpage of a popular online forum then use the data to populate my own database. Now, scraping a website is not illegal, but it&rsquo;s good you should know what you can and cannot scrape from a website. Many websites have a <strong>robots.txt</strong> file which gives such information. While there are tons of web scrapping tutorials on the web mostly in python, I felt there weren&rsquo;t enough of them in go so I decided to write one.  I did my research and found out an elegant golang framework for scraping websites called <a href="https://go-colly.org">colly</a>, and with this tool I was able to scrape the frontpage of a popular Nigerian forum called <a href="https://nairaland.com/">Nairaland</a>.</p>
 <p>The Go language has a ton of hype around it as it&rsquo;s relatively new, the syntax is relatively easy to pick up as compared to other statically typed languages, it is very fast and natively supports concurrency which makes it a language of choice for many in building cloud services and network applications. We can leverage this speed to scrape websites in a fast and easy way.</p>
 <h5 id="web-scraping">Web Scraping</h5>
 <p><a href="https://en.wikipedia.org/wiki/Web_scraping">Web scraping</a> is a form of data extraction that basically extracts data from websites. A web scraper is usually a bot that uses the HTTP protocol to access websites, extract HTML elements from them and use the data for various purposes.
 I&rsquo;ll be sharing with you how you can scrape a website with minimal effort in go, let&rsquo;s go 🚀</p>
 <p>First, you will need to have go installed on your system and know the basics of the language before you can proceed.
-We&rsquo;ll start by creating a folder to house our project, open your terminal and create a folder</p>
+We&rsquo;ll start by creating a folder to house our project, open your terminal and create a folder.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir scraping-with-go
 <span style="color:#fff;font-weight:bold">cd</span> scraping-with-go 
-</code></pre></div><p>Then initialize a go module, using the go toolchain</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go mod init github.com/&lt;Username&gt;/&lt;projectname&gt;/
+</code></pre></div><p>Then initialize a go module, using the go toolchain.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go mod init github.com/&lt;USERNAME&gt;/&lt;PROJECTNAME&gt;/
 </code></pre></div><p>Replace the username and project name with appropriate values, by now we should have two files in our folder called go.mod and go.sum, these will track our dependencies.
-Next we go get colly with the following command</p>
+Next we go get colly with the following command.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go get -v github.com/gocolly/colly
 </code></pre></div><p>Then we can get our hands dirty. Create a new main.go file and fire up your favorite text editor or IDE.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#fff;font-weight:bold">package</span> main
@@ -189,7 +189,7 @@ Next we go get colly with the following command</p>
 	Body   <span style="color:#fff;font-weight:bold">string</span>
 	Title  <span style="color:#fff;font-weight:bold">string</span>
 }
-</code></pre></div><p>The above is the data structure we will be storing a single post in, it will contain necessary information about a single post. This was all I needed to populate my database, I was not interested in getting the comments since we all know how toxic the comments section of  forums can be :)</p>
+</code></pre></div><p>The above is the data structure we will be storing a single post in, it will contain necessary information about a single post. This was all I needed to populate my database, I was not interested in getting the comments since we all know how toxic the comments section of  forums can be :).</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#fff;font-weight:bold">func</span> main() {
 	URL := <span style="color:#0ff;font-weight:bold">&#34;https://nairaland.com/&#34;</span>
 	log.Println(<span style="color:#0ff;font-weight:bold">&#34;Visiting&#34;</span>, URL)
@@ -203,7 +203,7 @@ Next we go get colly with the following command</p>
 c.OnHTML(<span style="color:#0ff;font-weight:bold">&#34;td.featured.w a[href]&#34;</span>, <span style="color:#fff;font-weight:bold">func</span>(e *colly.HTMLElement) {
 		postCollector.Visit(e.Attr(<span style="color:#0ff;font-weight:bold">&#34;href&#34;</span>))
 	})
-</code></pre></div><p>The OnHTML method registers a callback function to be called every time the scrapper comes across an html node with the selector we passed in. The above code visits every link of frontpage news</p>
+</code></pre></div><p>The OnHTML method registers a callback function to be called every time the scrapper comes across an html node with the selector we passed in. The above code visits every link of frontpage news.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">...
 postCollector.OnHTML(<span style="color:#0ff;font-weight:bold">`table[summary=&#34;posts&#34;] tbody`</span>, <span style="color:#fff;font-weight:bold">func</span>(e *colly.HTMLElement) {
 		log.Println(<span style="color:#0ff;font-weight:bold">&#34;Post found&#34;</span>, e.Request.URL)
