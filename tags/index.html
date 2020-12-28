@@ -52,7 +52,7 @@
     
       
       
-      <link rel="stylesheet" href="https://fibreactive.github.io/css/coder.min.280ba2c6a69f08f0daa62ca3d42693dbd769412dc8bc0eaf96c111fd966d0bbb.css" integrity="sha256-KAuixqafCPDapiyj1CaT29dpQS3IvA6vlsER/ZZtC7s=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://fibreactive.github.io/css/coder.min.b3350a7d31456b90f54806f1df520c64865527a58e6a5be10e554ca322896354.css" integrity="sha256-szUKfTFFa5D1SAbx31IMZIZVJ6WOalvhDlVMoyKJY1Q=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -60,7 +60,7 @@
       
         
         
-        <link rel="stylesheet" href="https://fibreactive.github.io/css/coder-dark.min.e78e80fc3a585a4d1c8fc7f58623b6ff852411e38431a9cd1792877ecaa160f6.css" integrity="sha256-546A/DpYWk0cj8f1hiO2/4UkEeOEManNF5KHfsqhYPY=" crossorigin="anonymous" media="screen" />
+        <link rel="stylesheet" href="https://fibreactive.github.io/css/coder-dark.min.c0948b241969586994a1a1f0fb623a7521a3ec99e40accc3c2bba7cd4b7c3c69.css" integrity="sha256-wJSLJBlpWGmUoaHw&#43;2I6dSGj7JnkCszDwrunzUt8PGk=" crossorigin="anonymous" media="screen" />
       
 
     
@@ -87,7 +87,9 @@
     <a class="navigation-title" href="https://fibreactive.github.io/">
       damiloladolor
     </a>
-    <i class="btn-toggle far fa-moon" id="btn-toggle"></i>
+     <button class="btn-toggle" id="btn-toggle">
+       <i class="fas fa-moon"></i>
+    </button>
     
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
@@ -196,9 +198,10 @@ fathom('trackPageview');
     <script>
             const btn = document.querySelector("#btn-toggle");
             const currentTheme = localStorage.getItem("theme");
+            
             if (currentTheme == "dark") {
                 document.body.classList.add("colorscheme-dark")
-                btn.classList.add("fa-sun")
+                btn.firstElementChild.classList.add("fa-sun")
             }
             btn.addEventListener('click', function(){
                 document.body.classList.toggle("colorscheme-dark");
@@ -208,9 +211,9 @@ fathom('trackPageview');
                 }
                 document.body.setAttribute('style', "transition: all .8s;")
                 localStorage.setItem("theme",theme)
-                btn.classList.toggle("fa-sun")       
+                btn.firstElementChild.classList.toggle("fa-sun")       
             })
-      </script>
+      </script> 
       <script id="dsq-count-scr" src="//portfolio-lrpi5ggzul.disqus.com/count.js" async></script>
   </body>
 
