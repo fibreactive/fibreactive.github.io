@@ -55,8 +55,8 @@
       
       <guid>https://0xdod.github.io/projects/</guid>
       <description>Here is a list of some of projects I have worked on and deployed.
-  A mini blog
- I learnt about the MVC framework for structuring web projects. This was built using Go and Gin framework. I implmented CRUD operations with mongodb as a database. I implemented Authentication and Authorization using JWT. I deployed the app to heroku    An image sharing platform
+  A mini forum
+ I learnt about the MVC framework for structuring web projects. This was built using Go and Gin framework. I implmented CRUD operations with mongodb as a database. I implemented Authentication and Authorization using JWT. I deployed the app to heroku view source    An image sharing platform
  This was built using Javascript.</description>
     </item>
     
